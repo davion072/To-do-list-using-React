@@ -5,9 +5,102 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  padding: 2% 5% 0 5%;
+  border-bottom: 3px solid #F96597;
+  color: #F96597;
+}
+
+.header h3 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.header h4 {
+  margin-top: 10px;
+}
+
+form {
+  padding: 2% 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textBox {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 720px;
+  padding: 10px;
+  border: 2px solid #F96597;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #F96597;
+}
+
+.textBox:focus {
+  outline: none;
+  border: 3px solid #fa0355;
+}
+
+form button {
+  border: 2px solid #F96597;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 1px 2px rgb(10, 1, 1);
+}
+
+form button:hover {
+  background-color: #F96597;
+  color: #E5E5E5;
+}
+
+.task {
+  padding: 0 0 0 5%;
+  display: flex;
+  width: 100%;
+  max-width: 720px;
+}
+
+.strike {
+  background-color: green;
+}
+
+.taskTag {
+  background-color: #FA95B7;
+}
+
+.task h3 {
+  margin: 4px;
+  color: rgb(13, 6, 53);
+
+  padding: 8px 20px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task input {
+  width: 20px;
+}
+
+.task input:checked {
+  background-color: #F96597;
+}
+
+.cross {
+  align-self: flex-end;
+  color: #fa0303;
 }
